@@ -14,7 +14,7 @@ exports.recent = function (base) {
         reqGet.end();
         reqGet.on('error', function (e) {
             console.error(e);
-        });
+        }); 
     });
 }
 
