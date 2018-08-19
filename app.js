@@ -1,12 +1,13 @@
 var express = require('express');
-var fixer = require('fixer-api');
 var path = require('path');
-
-
+var fix = require('./fixer.js');
 var app = express();
+
+fix.convert("USD", "EUR", 100).then(function (result) { console.log(result.result) });
+
 app.use(express.static(path.join(__dirname, "views")));
 
-app.get('/', function(req, res){
+app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, "views", "Home.html"));
 });
 
