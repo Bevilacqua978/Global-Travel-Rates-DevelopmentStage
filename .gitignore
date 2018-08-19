@@ -1,1 +1,9 @@
 config.json
+node_modules/performance-now/src/performance-now.js
+node_modules/performance-now/test/performance-now.js
+node_modules/performance-now/test/scripts.js
+*.json
+*.js
+*.md
+*.html
+node_modules/nconf/LICENSE
