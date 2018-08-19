@@ -1,6 +1,6 @@
 var config = require('./config.json');
 var https = require('https');
-
+ 
 exports.recent = function (base) {
     return new Promise(resolve => {
         var reqGet = https.request(`https://data.fixer.io/api/latest?access_key=${config.FixerKey}&base=${base}`, function (res) {
