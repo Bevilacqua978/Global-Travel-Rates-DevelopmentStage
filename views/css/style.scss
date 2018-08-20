@@ -29,7 +29,7 @@ body{
     //background: #222;
     color: white;
 
-    .nav-container {
+    .nav-1 {
       //position: relative;
       margin: 0 auto;
       //width: 94%;
@@ -48,7 +48,7 @@ body{
         float: left;
         margin-left: 40px;
       }
-      #nav {
+      .nav {
         position: absolute;
         right: 0;
         top: -15px;
@@ -77,6 +77,11 @@ body{
             }
           }
         }
+
+        .icon {
+          display: none;
+        }
+
       }
 
     }
@@ -84,64 +89,102 @@ body{
   }
 
   // Media query for repsonsive header
-  // @media only screen and (max-width: 1000px) {
-  //   #header {
-  //     h1 {
-  //       padding-left: 3%;
-  //     }
-  //
-  //     .nav-container {
-  //       width: 100%;
-  //
-  //       .responsive {
-  //         position: relative;
-  //         .icon {
-  //           position: absolute;
-  //           right: 0;
-  //           top: 0;
-  //         }
-  //       }
-  //
-  //       #nav {
-  //         width: 100%;
-  //         top: 60px;
-  //
-  //
-  //
-  //         ul {
-  //           background: #222;
-  //           width: 100%;
-  //           margin: 0px;
-  //
-  //           li {
-  //             float: none;
-  //
-  //             a {
-  //               padding: 10px 3%;
-  //               line-height: 20px;
-  //               border-top: 1px solid #333;
-  //             }
-  //           }
-  //         }
-  //
-  //         // &:before {
-  //         //   content: '\2630';
-  //         //   display: block;
-  //         //   position: absolute;
-  //         //   right: 3%;
-  //         //   top: -50px;
-  //         //   line-height: 40px;
-  //         //   font-size: 1.4em;
-  //         //   cursor: pointer;
-  //         // }
-  //
-  //
-  //       }
-  //     }
-  //   }
+  @media only screen and (max-width: 1350px) {
+    #header {
+      h1 {
+        padding-left: 3%;
+        padding-top: 0px;
+        margin: 0;
+
+      }
+
+      .nav-1 {
+        width: 100%;
+
+        .nav {
+          width: unset;
+          top: unset;
+          font-size: unset;
+
+          ul{
+            li{
+              a{
+                display: none;
+
+
+
+                }
+              }
+            }
+
+            .icon {
+              float: right;
+              display: block;
+              font-size: 40px;
+          }
+        }
+
+
+      }
+
+      .nav-1.responsive {
+
+          .nav {
+            width: 100%;
+            top: 60px;
+            display: block;
+
+
+
+        ul {
+          background: #222;
+          width: 100%;
+          margin: 0px;
+
+          li {
+            float: none;
+
+            a {
+              padding: 10px 3%;
+              line-height: 20px;
+              border-top: 1px solid #333;
+              display: block;
+            }
+          }
+        }
+      }
+
+
+
+      }
+
+
+
+    }
+  }
+
+
+
+
+
+
+
+
+  //////////////// 2nd statement
+
+  // &:before {
+  //   content: '\2630';
+  //   display: block;
+  //   position: absolute;
+  //   right: 3%;
+  //   top: -50px;
+  //   line-height: 40px;
+  //   font-size: 1.4em;
+  //   cursor: pointer;
   // }
-  //
-  //
+
+
+
 
   // This is the image container
 
