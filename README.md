@@ -1,4 +1,4 @@
-# Global-Travel-Rates
+# Global-Travel-Rates (Still in development)
 A website that utilizes Node.js to find global exchange rates.
 
 Current Test version of site can be founbd here: 
