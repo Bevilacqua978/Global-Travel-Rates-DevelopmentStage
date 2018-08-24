@@ -23,7 +23,6 @@
       </h1>
       <div class="icon-position">
         <a href="javascript:void(0);" class="icon" onclick="myFunction();myIcon(this);">
-          <!-- <i class="fa fa-bars"></i> -->
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
@@ -37,25 +36,25 @@
 
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="#header">Home</a>
           </li>
           <li>
-            <a href="#">Exchange Rates</a>
+            <a href="#exchange-rates">Exchange Rates</a>
           </li>
           <li>
-            <a href="#">Exchange Tips</a>
+            <a href="#exchange-tips">Exchange Tips</a>
           </li>
           <li>
-            <a href="#">Our Mission</a>
+            <a href="#our-mission">Our Mission</a>
           </li>
           <li>
-            <a href="#">Reach Us</a>
+            <a href="#reach-us">Reach Us</a>
           </li>
         </ul>
 
 
       </nav>
-
+<!-- This is the header text that fades in upon page load -->
 <div id="intro-heading">
   <h2 class="fade">Welcome</h2>
 </div>
@@ -67,34 +66,6 @@
 
     </div>
   </header>
-
-
-
-
-  <!-- <header>
-
-
-  <div class="nav-container">
-
-    <h1 class="logo">Global Exchnage Rates</h1>
-
-    <nav class="site-nav">
-        <ul>
-          <li><a href="">Exchange Rates</a></li>
-          <li><a href="">Exchange Tips</a></li>
-          <li><a href="">Our Misson</a></li>
-          <li><a href="">Reach Us</a></li>
-        </ul>
-    </nav>
-
-    <div class="menu-toggle">
-      <div class="hamburger"></div>
-    </div>
-
-  </div>
-
-    </header> -->
-
 
   <!-- THis is the background video -->
   <div class="video container">
@@ -108,6 +79,39 @@
     <a class="btn">Find Out More</a>
   </div> -->
 </div>
+
+
+<!-- These are the sections of the site below the header -->
+
+<section class="section" id="exchange-rates" >
+    <div class="container-1">
+      <h2>Exchange Rates</h2>
+      <p>Need to find the exchange rates for other currencies? We can help with that!</p>
+    </div>
+  </section>
+
+  <section class="section" id="exchange-tips">
+  <div class="container-1">
+    <h2>Exchange Tips</h2>
+    <p>New to trraveling? Here we can give you the best tips to keep in mind when traveling and dealing with curerency exchange.</p>
+  </div>
+</section>
+
+<section class="section"  id="our-mission">
+<div class="container-1">
+  <h2>Our Mission</h2>
+  <p>Our mission is to serve and the best resource to help you make your travel better!</p>
+</div>
+</section>
+
+<section class="section" id="reach-us">
+<div class="container-1">
+  <h2>Reach Us</h2>
+  <p>You can reach us at XXX-XXX-XXXX</p>
+</div>
+</section>
+
+
 
 <script>
 function myFunction() {
