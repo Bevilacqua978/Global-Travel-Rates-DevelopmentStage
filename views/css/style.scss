@@ -322,6 +322,9 @@ body{
 
     #intro-heading, #intro-paragraph {
 
+      margin-right: 10%;
+      margin-left: 10%;
+
       h2.fade {
         padding-top: 200px;
         font-size: 90px;
@@ -485,6 +488,12 @@ body{
 
       .nav-1.responsive {
 
+        #intro-heading, #intro-paragraph{
+          display: none;
+
+        }
+
+
         .nav {
           width: 50%;
           top: 60px;
@@ -541,6 +550,24 @@ body{
 
 
       .nav-1 {
+
+        #intro-heading, #intro-paragraph {
+
+          h2.fade{
+            font-size: 50px;
+          }
+
+
+          h3.fade {
+            font-size: 35px;
+            padding-top: 30px;
+          }
+
+
+
+        }
+
+
         h1.logo {
 
           //padding-left: 3%;
@@ -605,6 +632,15 @@ body{
 
 
       .nav-1 {
+
+
+
+
+
+
+
+
+
         h1.logo {
 
           //padding-left: 3%;

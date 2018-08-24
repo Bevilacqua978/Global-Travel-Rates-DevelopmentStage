@@ -59,30 +59,33 @@ body {
           transition: border 0.1s linear; }
           body #header .nav ul li a:hover {
             border-bottom: 4px solid #ffffff; }
-    body #header #intro-heading h2.fade, body #header #intro-paragraph h2.fade {
-      padding-top: 200px;
-      font-size: 90px;
-      text-align: center;
-      animation: fadein 2s;
-      -moz-animation: fadein 2s;
-      /* Firefox */
-      -webkit-animation: fadein 2s;
-      /* Safari and Chrome */
-      -o-animation: fadein 2s;
-      /* Opera */
-      margin-top: 0px; }
-    body #header #intro-heading h3.fade, body #header #intro-paragraph h3.fade {
-      padding-top: 50px;
-      font-size: 50px;
-      text-align: center;
-      animation: fadein 4s;
-      -moz-animation: fadein 4s;
-      /* Firefox */
-      -webkit-animation: fadein 4s;
-      /* Safari and Chrome */
-      -o-animation: fadein 4s;
-      /* Opera */
-      margin-top: 0px; }
+    body #header #intro-heading, body #header #intro-paragraph {
+      margin-right: 10%;
+      margin-left: 10%; }
+      body #header #intro-heading h2.fade, body #header #intro-paragraph h2.fade {
+        padding-top: 200px;
+        font-size: 90px;
+        text-align: center;
+        animation: fadein 2s;
+        -moz-animation: fadein 2s;
+        /* Firefox */
+        -webkit-animation: fadein 2s;
+        /* Safari and Chrome */
+        -o-animation: fadein 2s;
+        /* Opera */
+        margin-top: 0px; }
+      body #header #intro-heading h3.fade, body #header #intro-paragraph h3.fade {
+        padding-top: 50px;
+        font-size: 50px;
+        text-align: center;
+        animation: fadein 4s;
+        -moz-animation: fadein 4s;
+        /* Firefox */
+        -webkit-animation: fadein 4s;
+        /* Safari and Chrome */
+        -o-animation: fadein 4s;
+        /* Opera */
+        margin-top: 0px; }
 @keyframes fadein {
   from {
     opacity: 0; }
@@ -141,6 +144,8 @@ body {
         font-size: unset; }
         body #header .nav-1 .nav ul li a {
           display: none; }
+    body #header .nav-1.responsive #intro-heading, body #header .nav-1.responsive #intro-paragraph {
+      display: none; }
     body #header .nav-1.responsive .nav {
       width: 50%;
       top: 60px;
@@ -165,6 +170,11 @@ body {
               border: 1px solid #ffffff;
               border-radius: 25px; } }
   @media only screen and (max-width: 550px) {
+    body #header .nav-1 #intro-heading h2.fade, body #header .nav-1 #intro-paragraph h2.fade {
+      font-size: 50px; }
+    body #header .nav-1 #intro-heading h3.fade, body #header .nav-1 #intro-paragraph h3.fade {
+      font-size: 35px;
+      padding-top: 30px; }
     body #header .nav-1 h1.logo {
       margin: 0;
       font-size: 25px;
