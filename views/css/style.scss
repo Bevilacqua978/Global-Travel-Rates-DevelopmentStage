@@ -26,7 +26,7 @@ body{
   /////////////
   #header {
     background: #131314c4;
-    height: 9%;
+    height: 75px;
     z-index: 2;
     position: absolute;
     width: 100%;
@@ -162,10 +162,10 @@ body{
         padding-top: 200px;
         font-size: 90px;
         text-align: center;
-        animation: fadein 2s;
-        -moz-animation: fadein 2s; /* Firefox */
-        -webkit-animation: fadein 2s; /* Safari and Chrome */
-        -o-animation: fadein 2s; /* Opera */
+        // animation: fadein 2s;
+        // -moz-animation: fadein 2s; /* Firefox */
+        // -webkit-animation: fadein 2s; /* Safari and Chrome */
+        // -o-animation: fadein 2s; /* Opera */
         margin-top: 0px;
       }
 
@@ -173,53 +173,83 @@ body{
         padding-top: 50px;
         font-size: 50px;
         text-align: center;
-        animation: fadein 4s;
-        -moz-animation: fadein 4s; /* Firefox */
-        -webkit-animation: fadein 4s; /* Safari and Chrome */
-        -o-animation: fadein 4s; /* Opera */
+        // animation: fadein 4s;
+        // -moz-animation: fadein 4s; /* Firefox */
+        // -webkit-animation: fadein 4s; /* Safari and Chrome */
+        // -o-animation: fadein 4s; /* Opera */
         margin-top: 0px;
       }
 
-      @keyframes fadein {
-        from {
-          opacity:0;
-        }
-        to {
-          opacity:1;
-        }
-      }
-      @-moz-keyframes fadein { /* Firefox */
-        from {
-          opacity:0;
-        }
-        to {
-          opacity:1;
-        }
-      }
-      @-webkit-keyframes fadein { /* Safari and Chrome */
-        from {
-          opacity:0;
-        }
-        to {
-          opacity:1;
-        }
-      }
-      @-o-keyframes fadein { /* Opera */
-        from {
-          opacity:0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
+      // @keyframes fadein {
+      //   from {
+      //     opacity:0;
+      //   }
+      //   to {
+      //     opacity:1;
+      //   }
+      // }
+      // @-moz-keyframes fadein { /* Firefox */
+      //   from {
+      //     opacity:0;
+      //   }
+      //   to {
+      //     opacity:1;
+      //   }
+      // }
+      // @-webkit-keyframes fadein { /* Safari and Chrome */
+      //   from {
+      //     opacity:0;
+      //   }
+      //   to {
+      //     opacity:1;
+      //   }
+      // }
+      // @-o-keyframes fadein { /* Opera */
+      //   from {
+      //     opacity:0;
+      //   }
+      //   to {
+      //     opacity: 1;
+      //   }
+      // }
     }
 
   }
+
+  // This is where the CSS grid will exist
+
+//   .grid-wrapper {
+//   display: grid;
+//   //grid-gap: 10px;
+//   grid-template-columns: 1fr 1fr 1fr;
+//   //background-color: #fff;
+//   color: #444;
+//   margin-top: 14%;
+//
+//
+//
+// a {
+//   background-color: #0000006b;
+//   color: #fff;
+//   //border-radius: 5px;
+//   padding: 110px 112.5px 120px 112.5px;
+//   font-size: 100px;
+//   align-self: center;
+//   justify-self: center;
+//
+//   &:hover, &:focus {
+//     background-color: #000000e3;
+//   }
+// }
+// }
 
 
 // This is the code to style the sections where content will be placed
   .section{
     padding:20px 0;
+    overflow: hidden;
+    background:#333;
+    color:#fff;
 
     h2 {
       font-size: 60px;
@@ -231,13 +261,58 @@ body{
 
 
 
+
+// This is the form aection
+
+.form-1 {
+
+  // p{
+  //   font-size: 20px;
+  //   line-height: unset;
+  // }
+
+float: left;
+
+    form {
+
+      div {
+        margin-bottom: 20px;
+      }
+
+
+      input, select {
+        width: 300px;
+        height: 40px;
+        background: #4c4c4c;
+        color: white;
+        font-size: 28PX;
+
+
+
+        &:focus {
+          background-color: #676767;
+        }
+
+    }
+
+    }
+  }
+
+
+
+
     .container-1 {
 
-      max-width:960px;
+      //max-width:960px;
       padding-left:1rem;
       padding-right:1rem;
       margin:auto;
-      text-align:center;
+      //text-align:center;
+      margin-left: 5%;
+      margin-right: 5%;
+
+
+
 
 
     }
@@ -249,8 +324,8 @@ body{
   }
 
   #exchange-tips, #reach-us {
-    background:#333;
-    color:#fff;
+    // background:#333;
+    // color:#fff;
 
 
   }

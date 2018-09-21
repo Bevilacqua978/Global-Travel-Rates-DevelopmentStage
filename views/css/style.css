@@ -7,7 +7,7 @@ body {
   overflow-x: hidden; }
   body #header {
     background: #131314c4;
-    height: 9%;
+    height: 75px;
     z-index: 2;
     position: absolute;
     width: 100%;
@@ -65,64 +65,39 @@ body {
         padding-top: 200px;
         font-size: 90px;
         text-align: center;
-        animation: fadein 2s;
-        -moz-animation: fadein 2s;
-        /* Firefox */
-        -webkit-animation: fadein 2s;
-        /* Safari and Chrome */
-        -o-animation: fadein 2s;
-        /* Opera */
         margin-top: 0px; }
       body #header #intro-heading h3.fade, body #header #intro-paragraph h3.fade {
         padding-top: 50px;
         font-size: 50px;
         text-align: center;
-        animation: fadein 4s;
-        -moz-animation: fadein 4s;
-        /* Firefox */
-        -webkit-animation: fadein 4s;
-        /* Safari and Chrome */
-        -o-animation: fadein 4s;
-        /* Opera */
         margin-top: 0px; }
-@keyframes fadein {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@-moz-keyframes fadein {
-  /* Firefox */
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@-webkit-keyframes fadein {
-  /* Safari and Chrome */
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@-o-keyframes fadein {
-  /* Opera */
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
   body .section {
-    padding: 20px 0; }
+    padding: 20px 0;
+    overflow: hidden;
+    background: #333;
+    color: #fff; }
     body .section h2 {
       font-size: 60px; }
     body .section p {
       font-size: 40px; }
+    body .section .form-1 {
+      float: left; }
+      body .section .form-1 form div {
+        margin-bottom: 20px; }
+      body .section .form-1 form input, body .section .form-1 form select {
+        width: 300px;
+        height: 40px;
+        background: #4c4c4c;
+        color: white;
+        font-size: 28PX; }
+        body .section .form-1 form input:focus, body .section .form-1 form select:focus {
+          background-color: #676767; }
     body .section .container-1 {
-      max-width: 960px;
       padding-left: 1rem;
       padding-right: 1rem;
       margin: auto;
-      text-align: center; }
-  body #exchange-tips, body #reach-us {
-    background: #333;
-    color: #fff; }
+      margin-left: 5%;
+      margin-right: 5%; }
   @media only screen and (max-width: 1350px) {
     body #header .nav-1 {
       width: 100%; }
